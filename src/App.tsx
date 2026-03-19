@@ -9,7 +9,7 @@ import './App.css'
 //import "./index.css"
 
 function GltfModel() {
-  const gltf = useGLTF('/platform.glb');
+  const gltf = useGLTF(`${import.meta.env.BASE_URL}platform.glb`);
   return <primitive object={gltf.scene} scale={1} />
 }
 
